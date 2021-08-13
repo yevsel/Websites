@@ -1,0 +1,214 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family:Ebrima;
+}
+
+#nav-bar{
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    background:black;
+    align-items: center;
+    overflow:auto;
+}
+#nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+#nav-bar .nav ul{
+    display: flex;
+    align-items: center;
+    padding:0px;
+    list-style: none;
+}
+#nav-bar .nav ul li{
+    padding:2px 5px; 
+}
+#nav-bar .nav ul li a{
+    padding:7px 5px;
+    border-radius:10px;
+    transition:background 500ms ease;
+}
+#nav-bar .nav ul li a:hover{
+    background: #333;
+}
+#nav-bar .nav ul li a:focus{
+    background: rgb(155, 155, 155);
+}
+.logo{
+    pointer-events: all;
+    font-size: 26px;
+}
+.sign{
+    background:#ccc;
+    color:black;
+}
+
+.commitment, .partner{
+    display: flex;
+    width:90%;
+    margin:auto;
+    margin-top:50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.commitment img, .partner img{
+    width:100%;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+.commitment div, .partner div{
+    flex-basis: 200px;
+    flex-grow: 1;
+    padding:00px 30px;
+    line-height: 1.8;
+}
+.commitment h1, .partner h1{
+    font-size:40px;
+}
+
+.help{
+    width:90%;
+    margin:auto;
+    margin-top:80px;
+}
+.help div{
+    width: 60%;
+    margin-left: right;
+}
+.help a{
+    text-decoration: none;
+    color:#333;
+    padding-right: 30px;;
+}
+.features{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.features div{
+    flex-basis: 200px;
+    flex-grow:1;
+    padding-right: 40px;
+}
+.features div p{
+    color:#333;
+}
+.journey img{
+    width:100%;
+}
+.journey{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-bottom: 70px;
+}
+.journey div{
+    flex-basis:300px;
+    flex-grow:1;
+    line-height: 1.7;
+    padding:0px 15px;
+    margin-top:20px;
+}
+.journey a, .partner a,.before-footer a{
+    color:#333;
+    text-decoration: none;
+}
+.everyday div{
+    width:90%;
+    margin:auto;
+    color:white;
+}
+.everyday{
+    background: #1870bd;
+    padding:70px 0px;
+    margin-bottom: 70px;
+}
+.before-footer{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+}
+.before-footer div{
+    flex-basis:300px;
+    flex-grow: 1;
+    margin-top: 40px;
+    line-height: 1.7;
+}
+form{
+    width:50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0px;
+}
+label{
+    margin:20px;
+    /* border:1px solid red; */
+}
+footer{
+    background:black;
+    color:white;
+    height:100vh;
+    overflow: auto;
+}
+
+footer a{
+    text-decoration:none;
+    color:white;
+}
+footer a:hover{
+    border-bottom: 3px solid #333;
+    color:#ccc;
+}
+.container{
+    padding-left: 20px;
+}
+.visit{
+    padding-bottom: 30px;
+}
+.visit:hover{
+    border-bottom: 2px solid #ccc;
+}
+
+.hyper-links{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hyper-links ul{
+    padding:0px;
+    list-style: none;
+    width:200px;
+}
+.hyper-links ul li{
+    padding:10px 0px;
+}
+.hyper-links .op{
+    font-weight: 900;
+    font-size:18px;
+}
+
+@media (max-width:700px){
+    .commitment div, .partner div{
+        padding:30px 0px;
+    }
+    .commitment, .partner{
+        margin-top: 0px;
+    }
+    .help div{
+        width: 100%;
+    }
+    .help a{
+        display: block;
+        padding-top: 10px;
+    }
+}

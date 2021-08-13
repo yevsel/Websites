@@ -1,0 +1,146 @@
+body{
+	font-family: Arial Helvetica sans-serif;
+	line-height: 2em;
+	margin:0px;
+	
+
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: #33ff33;
+}
+.contain{
+	width:95%;
+	margin:auto;
+
+}
+
+.contain #head .nav-bar ul{
+	list-style: none;
+	display: flex;
+}
+
+
+.contain #head .nav-bar ul li{
+	list-style: none;
+	display: inline;
+	padding: 6px 28px;
+	font-weight: bold;
+	font-family: Ebrima;
+	font-size: 17px;
+
+}
+
+.contain #head .nav-bar ul li:nth-child(1) {
+	font-size: 23px;
+	padding-left: 0px;
+}
+.contain #head .nav-bar ul li:nth-child(1) a{
+	color: #00e600;
+}
+
+.contain #head .nav-bar ul li:nth-child(2) {
+	margin-left: auto;
+}
+.contain #head .nav-bar ul li:nth-child(5) {
+	background: #00e600;
+	border-radius: 27px;
+}
+.contain #head .nav-bar ul li:nth-child(6) {
+	background: #00e600;
+	margin-left: 10px;
+	border-radius: 27px;
+}
+
+.contain #head .nav-bar ul li:nth-child(5) a{
+	color: white;
+}
+.contain #head .nav-bar ul li:nth-child(6) a{
+	color: white;
+}
+
+.class{
+	width: 100%;
+	height: 480px;
+	filter: brightness(50%);
+	position: relative;
+}
+
+.contain .boss{
+	text-align: center;
+	position: absolute;
+	top: 90px;
+	left: 44%;
+	color: white;
+	border:5px #00e600 solid;
+	padding: 26px 26px;
+	font-family: Ebrima;
+}
+
+.contain .boss-1{
+	position: absolute;
+	text-align: center;
+	top: 290px;
+	left:33%;
+	color: white;
+	font-family: Ebrima;
+	word-spacing: 7px;
+}
+
+.contain .boss-2{
+	position: absolute;
+	text-align: center;
+	top:330px;
+	left: 20%;
+	color: white;
+	font-family: Ebrima;
+	font-size: 18px;
+}
+
+.contain .desc-head{
+	text-align: center;
+	font-family: Tahoma;
+	color: #595959;
+}
+
+.contain .desc{
+	color: #8c8c8c;
+	font-family: Tahoma;
+	text-align: center;
+	padding: 10px;
+	margin: 0px;
+	
+
+}
+.contain .line{
+	border:1px #8c8c8c solid;
+	margin:0px auto;
+	width:30px;
+
+}
+
+.contain .description{
+	display: flex;
+	font-family: Tahoma;
+}
+
+.contain .description div{
+	flex:1;
+	padding: 10px 30px;
+	line-height: 1.3em;
+}
+
+
+.contain .description a:hover{
+	color:black;
+}
+
+.contain .description .one{
+	margin-bottom: 0px;
+	color:#00e600;
+}

@@ -1,0 +1,165 @@
+body{
+    font-family:Ebrima;
+    padding:0px;
+    margin:0px;
+}
+header{
+    box-shadow: 0px 4px 5px #e4e4e4;
+}
+nav{
+    display: flex;
+    width:93%;
+    margin: auto;
+    align-items: center;
+    overflow: auto;
+}
+.logo{
+    /* align-self: stretch; */
+}
+
+.menu{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.menu .top{
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .top div:nth-child(2){
+    /* border:3px solid yellow; */
+}
+.menu .top div:nth-child(2) ul{
+    padding:0px;
+    margin-right: 20px;
+}
+.menu .top ul, .menu .down ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-top: 0px;
+}
+.menu .top ul li, .menu .down ul li{
+    padding:0px 15px;
+}
+.menu .top a, .menu .down a{
+    text-decoration: none;
+    color:black;
+}
+.bigAnchorTag{
+    font-size: 18px;
+}
+.orderNow{
+    border:none;
+    background: rgb(255, 196, 0);
+    padding:15px 25px;
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 17px;
+    /* font-weight: bold; */
+    color:#333;
+}
+
+article{
+    width: 90%;
+    margin:auto;
+    margin-top:70px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+section{
+    display:flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+section:nth-child(even) .image{
+    order:2;
+}
+.intro-text{
+    font-size:30px;
+    /* margin:7px 0px; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.image{
+    flex:2.5;
+    /* align-self: stretch; */
+}
+.disc{
+    flex:1.5;
+    padding:20px;
+}
+
+.before-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.conclusion{
+    width:30%;
+    color:#333;
+    margin-bottom: 50px;
+}
+.burger{
+    margin-left: auto;
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width:35px;
+    height:5px;
+    background: rgb(53, 53, 53);
+    margin:5px;
+    border-radius: 5px;
+}
+
+@media (max-width:800px){
+    section{
+        display: block;
+        margin-bottom:50px;
+        border:1px solid #ccc;
+        border-radius:5px;
+        box-shadow: 0.5px 1px 5px #ccc;
+        overflow: hidden;
+    }
+    /*header{
+        position: sticky;
+        top:0px;
+        background: white;
+    }*/
+    /* .menu{
+        
+        position: absolute;
+        top:60px;
+        right:0px;
+        background: green;
+        width:70vw;
+        padding:0px;
+    } */
+    
+    .burger{
+        display: block;
+    }
+    .logo img{
+        width:50%;
+    }
+    .intro-text{
+        padding:0px;
+        margin:0px;
+        font-size: 25px;
+    }
+    .conclusion{
+        width: 100%;
+    }
+    .before-footer{
+        display: block;
+    }
+    .conclusion-disc{
+        padding:10px;
+    }
+    /* .orderNow{
+        display: block;
+    } */
+}

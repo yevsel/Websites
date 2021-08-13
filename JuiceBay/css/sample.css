@@ -1,0 +1,92 @@
+
+.nav-item{
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    background:rgb(205, 235, 253);
+    transform: translateX(-100%);
+    transition: transform 400ms ease-in-out;
+}
+.nav-item:hover::before{
+    transform: translateX(0px);
+}
+
+.jumbotron button{
+    display: inline-block;
+    margin-top:20px;
+    /* background: rgb(240, 109, 34); */
+    color:white;
+    border-radius: 0px;
+    font-weight:bold;
+    border-radius:5px;
+    animation-name: btn1;
+    animation-duration: 900ms;
+    animation-delay: 800ms;
+    opacity: 0;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes btn1{
+    from{left:-100px;}
+    to{left:0px;opacity: 1;}
+}
+
+.jumbotron{
+    background: linear-gradient(50deg,rgb(19, 161, 243),rgb(21, 99, 151));
+    border-radius: 0px;
+    height: 100%;
+    color:rgb(246, 246, 246);
+    margin:0px;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+h4{
+    color:white;
+    padding:15px;
+    margin: 0px;
+    text-align: center;
+}
+
+.red{
+    height:2px;
+    width:100%;
+    background: red;
+    
+}
+.yellow{
+    height:2px;
+    width:100%;
+    background: gold;
+    
+}
+.green{
+    height:2px;
+    width:100%;
+    background: green;
+    
+}
+.color{
+    position: sticky;
+    top:0px;
+    /* display:flex; */
+    z-index: 10;
+}
+@media (max-width:700px){
+    .jumbotron button{
+        display: block;
+        width:100%;
+        font-weight: bold;
+    }
+    
+}

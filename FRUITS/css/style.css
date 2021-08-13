@@ -1,0 +1,224 @@
+
+body{
+    background: #ffffff;
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+    transition:background 1000ms ease;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    padding:0px;
+    overflow: auto;
+    background: linear-gradient(90deg,rgb(9, 168, 49),rgb(12, 189, 86));
+}
+.logo{
+    margin:0px;
+    padding:0px 10px;
+    color:rgba(238, 222, 218, 0.801);
+    /* border: 1px solid red; */
+}
+.logo span{
+    color:rgb(230, 156, 96);
+    padding: 0px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    margin-left: auto;
+}
+.links li:nth-child(5){
+    background: #0275d8;
+}
+.links li{
+    padding:10px 20px;
+    /* border:1px solid red; */
+    transition: background 300ms ease-in;
+}
+.links li:hover{
+    background:rgb(93, 89, 89);
+}
+
+.links a{
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+    padding:5px 0px;
+}
+
+#intro{
+    background-image: url('../Images/Fruit\ 3.png');
+    padding:2px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: bottom, left; */
+    margin-bottom: 1vh;
+    /* clip-path: polygon(100% 0,100% 82%,45% 100%,0 100%, 0 0); */
+}
+.intro-text{
+    padding:15px;
+    width:400px;
+    margin:25px;
+    /* border:1px solid red; */
+    /* clip-path: polygon(100% 0,100% 82%,45% 100%,0 100%, 0 0); */
+    background:rgb(255, 255, 255,0.94);
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+    border-top:5px solid orange;
+    transition: background 1000ms ease-out;
+}
+.intro-text .phrase{
+    font-size: 42px;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.intro-text h2{
+    color:rgb(107, 107, 107);
+}
+.intro-text p{
+    line-height: 2;
+}
+.intro-text p span{
+    background:orange;
+    color:#333;
+    padding:0px 4px;
+    font-weight: 700;
+}
+.intro-text a{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    /* margin-left:15px ; */
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    background:#0275d8;
+    color:white;
+    padding:16px 13px;
+    border-radius: 10px;
+    transition: background 400ms ease;
+}
+.intro-text a:hover{
+    background: rgb(5, 74, 138);
+}
+
+.gallery{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.card img{
+    width:100%;
+}
+.card{
+    margin:20px;
+    background:#333;
+    color:white;
+    text-align: center;
+    flex-basis: 250px;
+    flex-grow: 1;
+    box-shadow: 0px 4px 6px #333;
+    transform: scale();
+    transition:transform 300ms ease;
+}
+.card:hover{
+    transform: scale(1.07);
+    box-shadow: 0px 5px 7px #333;
+}
+.card .card-text p{
+    line-height: 2;
+    padding:0px 5px;
+}
+.card a{
+    display: block;
+    background-color: #0275d8;
+    padding:20px 10px;
+    margin: 0px;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    transition:background 400ms ease;
+}
+.card a:hover{
+    background:rgb(5, 74, 138);
+}
+.hygiene{
+    /* background:linear-gradient(90deg,orange,rgb(245, 163, 109)); */
+    padding:30px;
+    background-color: orange;
+    
+}
+.hygiene-text{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    color:rgb(44, 42, 42);
+    background:rgb(255, 215, 140);
+    line-height: 2;
+    padding:10px;
+    /* clip-path: polygon(100% 0,100% 82%,45% 100%,0 100%, 0 0); */
+}
+.hygiene-phrase{
+    font-size: 40px;
+    letter-spacing: 5px;;
+    margin:0px;
+    background:#9ebcd6;
+    color:white;
+    clip-path: polygon(100% 0,100% 82%,45% 100%,0 100%, 0 0);
+}
+footer{
+    color:white;
+    background:#333;
+    text-align: center;
+    padding:10px;
+    font-weight: 700;
+}
+
+@media (max-width:600px){
+    #intro{
+        padding:20px 0px;
+    }
+    .intro-text{
+        width:85%;
+        margin:auto;
+        text-align: center;
+        background-color: rgb(255, 255, 255,0.81);
+        border-radius: 0px;
+    }
+    .intro-text .phrase{
+        font-size: 37px;
+    }
+    .intro-text p span{
+        display: block;
+        text-align: center;
+        background-color: rgb(230, 197, 136);
+    }
+    .intro-text a{
+        box-shadow:0px 2px 5px #333;
+    }
+    .gallery{
+        width:92%;
+    }
+    .card{
+        margin:20px 5px;
+    }
+    .hygiene-text{
+        width: 95%;
+    }
+}
+@media (max-width:1000px){
+    .card:nth-child(2){
+        order:3;
+    }
+}

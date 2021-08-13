@@ -1,0 +1,32 @@
+body{
+    margin:0px;
+    font-family: ebrima;
+    background:#333;
+    color:white;
+}
+
+nav h1{
+    text-align:center;
+}
+
+
+.game{
+    text-align:center;
+    justify-content: center;
+    display:grid;
+    grid-template-rows: 170px 170px 170px;
+    grid-template-columns: 170px 170px 170px;
+}
+.first,.second,.third,.forth,.fifth,.sixth,.seventh,.eighth,.ninth{
+    border:2px solid rgb(0, 113, 128);
+    background:#ccc;
+}
+
+.first:hover,.second:hover,.third:hover,.forth:hover,.fifth:hover,.sixth:hover,.seventh:hover,.eighth:hover,.ninth:hover{
+    background:rgb(236, 120, 91);
+}
+
+
+.desc{
+    text-align: center;
+}

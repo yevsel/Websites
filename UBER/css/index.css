@@ -1,0 +1,244 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family:Ebrima;
+}
+.container{
+    width:95%;
+    margin:auto;
+}
+
+#nav-bar{
+    display: flex;
+    margin:0px;
+    justify-content: space-between;
+    background:black;
+    align-items: center;
+    overflow:auto;
+}
+#nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+#nav-bar .nav ul{
+    display: flex;
+    align-items: center;
+    padding:0px;
+    list-style: none;
+}
+#nav-bar .nav ul li{
+    padding:2px 5px; 
+}
+#nav-bar .nav ul li a{
+    padding:7px 5px;
+    border-radius:10px;
+    transition:background 500ms ease;
+}
+#nav-bar .nav ul li a:hover{
+    background: #333;
+}
+#nav-bar .nav ul li a:focus{
+    background: rgb(155, 155, 155);
+}
+.logo{
+    pointer-events: all;
+    font-size: 26px;
+}
+.sign{
+    background:#ccc;
+    color:black;
+}
+
+#main{
+    background-image: url('../Images/Outdoor.png');
+    background-size: cover;
+    padding:50px 0px;
+}
+#main .main-menu{
+    width: 90%;
+    margin:auto;
+    /* background: white; */
+}
+#main .main-menu .menu ul{
+    display: flex;
+    list-style: none;
+    padding:0px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 2px solid #ccc;
+    margin: 0px;
+    overflow: auto;
+}
+#main .main-menu .menu ul li button{
+    padding:20px;
+    cursor: pointer;
+    margin:2px;
+    background: white;
+    border:none;
+    transition:background 200ms ease;
+}
+#main .main-menu .menu ul li button:focus{
+    background:#ccc;
+}
+#main .main-menu .more-menu{
+    background: rgb(255, 255, 255);
+    margin:0px;
+    padding:20px;
+}
+.drive{
+    display: inline-block;
+    margin-top:30px;
+    text-decoration: none;
+    background:black;
+    color:white;
+    padding:15px;
+    margin-bottom: 15px;
+    transition: background 400ms ease;
+}
+.drive:hover{
+    background:#333;
+}
+.learn{
+    display:inline-block;
+    text-decoration: none;
+    color:#333;
+    border-bottom: #ccc solid 1px;
+    /* padding: 5px; */
+    transition: border-bottom 500ms ease;
+}
+.learn:hover{
+    border-bottom: 1px solid #333;
+}
+.desc a{
+    display:block;
+    text-decoration: none;
+    color:#333;
+    border-bottom: #ccc solid 1px;
+    padding: 5px;
+    display: inline-block;
+}
+.section img, .service img{
+    width:100%;
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+.service .card1{
+    flex-basis: 320px;
+    flex-grow:1;
+    margin:10px;
+}
+.service .card2{
+    flex-basis:320px;
+    flex-grow:1;
+    margin:10px;
+}
+.service .card3{
+    flex-basis: 320px;
+    flex-grow:1;
+    margin:10px;
+}
+.service a{
+    color:#333;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    transition:border-bottom 300ms ease;
+}
+.service a:hover{
+    border-bottom:1px solid #333;
+}
+.conclusion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.conclusion img{
+    width:100%;
+}
+.guide{
+    margin:40px 0px;
+    padding:10px;
+}
+.guide a{
+    text-decoration: none;
+    color:#333;
+    border-bottom: 1px solid #ccc;
+    transition:border-bottom 500ms ease ;
+}
+.guide > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 2rem;
+}
+.guide a:hover{
+    border-bottom:1px solid #333;
+}
+.before-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.before-footer .card{
+    width:200px;
+    margin:0px 20px;
+    flex-grow:1;
+}
+
+footer{
+    background:black;
+    color:white;
+    height:100vh;
+    overflow: auto;
+}
+
+footer a{
+    text-decoration:none;
+    color:white;
+}
+footer a:hover{
+    border-bottom: 3px solid #333;
+    color:#ccc;
+}
+.visit{
+    padding-bottom: 30px;
+}
+.visit:hover{
+    border-bottom: 2px solid #ccc;
+}
+
+.hyper-links{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hyper-links ul{
+    padding:0px;
+    list-style: none;
+    width:200px;
+}
+.hyper-links ul li{
+    padding:10px 0px;
+}
+.hyper-links .op{
+    font-weight: 900;
+    font-size:18px;
+}
+
+
+@media (max-width:700px){
+    .conclusion{
+        display: block;
+    }
+}
+
+
+@media (min-width:850px){
+    #main .main-menu .more-menu{
+        width:60%;
+    }
+}
